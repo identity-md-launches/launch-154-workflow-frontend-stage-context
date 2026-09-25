@@ -1,0 +1,39 @@
+{
+  "name": "imd-compute-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Identity MD seat compute dashboard and Seat Compute (COMPUTE) contract frontend on Sepolia",
+  "scripts": {
+    "sync": "node scripts/sync-handoff.mjs",
+    "snapshot": "node scripts/snapshot.mjs",
+    "dev": "npm run sync && vite",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "build": "npm run sync && npm run typecheck && vite build && node scripts/manifest.mjs",
+    "build:refresh": "npm run snapshot && npm run build",
+    "manifest": "node scripts/manifest.mjs",
+    "verify:manifest": "node scripts/manifest.mjs --check",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "check": "npm run test && npm run build && npm run verify:manifest"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "viem": "^2.37.6"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.3",
+    "jsdom": "^27.0.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-153-workflow-contract-stage-context",
+  "version": 1,
+  "launchId": "26f496cb-eb56-4190-982f-431a5a740b71",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Sepolia launch for the Identity MD seat compute dashboard. Deploy SeatCompute first, then ComputeProject with the launch token address. The companion exposes an immutable token address, version 1 and site label imd-compute; usage accounting remains off-chain. Neither contract has an owner role or requires initialization. The pool pairs with native ETH and has no hook. initialPrice is decimal sqrtPriceX96; services apply the pinned policy's effective opening price and provide signed artifact linkage. Deployment and frontend/IPFS hosting follow this contract stage.",
+    "token": {
+      "name": "Seat Compute",
+      "symbol": "COMPUTE",
+      "contract": "SeatCompute",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "ComputeProject",
+        "constructorArgs": [
+          "$token"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "SeatCompute",
+      "txHash": "0xced380e5923053e7b974853f86572d6f2f5e773db6d758fe6b48e21468dc9f4f",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0x3a7fd75f1ba7f1683e206e048e399d452901426b",
+      "blockNumber": 11777390,
+      "creationCodeHash": "c7208a3d1b8a4023b96559de06f2c182ab7f4679a206d79c93f8370a4e3484b7"
+    },
+    {
+      "name": "ComputeProject",
+      "txHash": "0xced380e5923053e7b974853f86572d6f2f5e773db6d758fe6b48e21468dc9f4f",
+      "abiHash": "b4f1863106115e462c2758d7ef6d1044eca2d7abe69757b9b8af5b95dcccfdc7",
+      "address": "0x5ef94cfb8c0f77fccd56ea943f6db07f86237a69",
+      "blockNumber": 11777390,
+      "creationCodeHash": "c9607e7655a58ed1416a5e0608eb2926b48e73844e83e448868b39e4d1afa627"
+    }
+  ],
+  "sourceCommit": "e58673e4d02b30e601364df34e7d75e495b82d30",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "2dc444857038c3cd3ea75a09d2a53bed2ea05639becb407646fc19462c3d9335"
+}

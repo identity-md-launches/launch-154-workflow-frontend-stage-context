@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "launchId": "26f496cb-eb56-4190-982f-431a5a740b71",
+  "chainId": 11155111,
+  "sourceCommit": "e58673e4d02b30e601364df34e7d75e495b82d30",
+  "attestationHash": "2dc444857038c3cd3ea75a09d2a53bed2ea05639becb407646fc19462c3d9335",
+  "contracts": [
+    {
+      "name": "SeatCompute",
+      "address": "0x3a7fd75f1ba7f1683e206e048e399d452901426b",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "abiPath": "abi/SeatCompute.json"
+    },
+    {
+      "name": "ComputeProject",
+      "address": "0x5ef94cfb8c0f77fccd56ea943f6db07f86237a69",
+      "abiHash": "b4f1863106115e462c2758d7ef6d1044eca2d7abe69757b9b8af5b95dcccfdc7",
+      "abiPath": "abi/ComputeProject.json"
+    }
+  ],
+  "assets": [
+    {
+      "path": "abi/ComputeProject.json",
+      "sha256": "00e4a7f387903fc1dc7ab05ed56667b72e926e923eaf63bd805e748024ab244c"
+    },
+    {
+      "path": "abi/SeatCompute.json",
+      "sha256": "9578fcb499b4ba5fac51462a67a2654d9f803e0ea3af9bdb19130ff695808542"
+    },
+    {
+      "path": "assets/index-CsqIoIQx.css",
+      "sha256": "378e894603716127bed328bbdfade332384bdf0fec8a1272c6eb24d135f76c5f"
+    },
+    {
+      "path": "assets/index-D-z2XJBj.js",
+      "sha256": "5d1158f466f18584119d1f69cab2075d40ca66a9a752f8370b6ce3b0563bb8ce"
+    },
+    {
+      "path": "assets/react-DPIr46qh.js",
+      "sha256": "c0e00f50de6c0c4313118305af3b7781b03c48879475014a86ba2bcd056a65f6"
+    },
+    {
+      "path": "assets/viem-CGcFk8YW.js",
+      "sha256": "5b58d56c63be1ae64507d172fe6d9c8acf649fdc4fcc260ed828a9009ce5b318"
+    },
+    {
+      "path": "data/snapshot.json",
+      "sha256": "85ef5df7f6f5d0039a1461ea6da1e2056e8e7a2e49326e2e718def7a28749822"
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "a0a9bd289a46edc0263e14607a77ec693f6501cc090491a29ee306fd10788eed"
+    },
+    {
+      "path": "index.html",
+      "sha256": "612f6ba3c1b78e6dd290520b9054d52f09d0c801a53327fdb40aa2f28b7904c9"
+    }
+  ],
+  "network": {
+    "chainId": 11155111,
+    "name": "Sepolia",
+    "testnet": true,
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "explorer": "https://sepolia.etherscan.io",
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [
+      "https://cloud.google.com/application/web3/faucet/ethereum/sepolia",
+      "https://www.alchemy.com/faucets/ethereum-sepolia"
+    ],
+    "uniswapV4": {
+      "poolManager": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+      "universalRouter": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+      "quoter": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+      "stateView": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+      "positionManager": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3"
+    }
+  }
+}

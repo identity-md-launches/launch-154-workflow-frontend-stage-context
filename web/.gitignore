@@ -1,0 +1,7 @@
+node_modules/
+.vite/
+coverage/
+*.log
+# Generated from handoff/ and ../docs/abi by scripts/sync-handoff.mjs (npm run sync)
+public/abi/
+public/imd-deployment.json
